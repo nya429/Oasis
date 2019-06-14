@@ -1,0 +1,18 @@
+<div class="expander">
+  <div class="expander-header cursor-pointer"
+       (click)='onToggle()'>
+       Component 2
+      <div 
+          class="arrow"
+          [ngClass]="{'arrow-up': expanded,
+                     'arrow-down': !expanded}" 
+          ></div>
+    
+  </div>
+  
+  <div class="expander-body"          
+        [ngClass]="{'expander-body-collpase': !expanded}" >
+      <div class="expander-body-content
+                  word-wrap">{{content}}</div>
+  </div>
+</div>
